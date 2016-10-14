@@ -25,8 +25,6 @@ func main() {
 
 func htmlTime(out chan<- string, i int) {
 	tn := time.Now()
-	//res, err := http.Get("http://www.gutenberg.org/cache/epub/1661/pg1661.txt")
-	// when testing this.. Gutenberg.org blocked my ip  :D
 	res, err := http.Get("http://www.apple.com")
 	if err != nil {
 		log.Fatal(err)
